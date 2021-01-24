@@ -13,7 +13,7 @@ class Batch {
     private $end_batch = "23:00";
 
     /**
-     * public get start_batch to be used elsewhere.
+     * public get start_batch time .
      * @return mixed
      */
     public function get_start_batch(): string
@@ -22,7 +22,7 @@ class Batch {
     }
 
     /**
-     * public get end_batch to be used elsewhere.
+     * public get end_batch time
      * @return mixed
      */
     public function get_end_batch(): string
@@ -31,6 +31,8 @@ class Batch {
     }
 
     /**
+     * Start batch to start the process of collecting the consignments,
+     * throughout the day passing the amount variable for testing.
      * @param $amount
      * @return array
      */
@@ -40,6 +42,8 @@ class Batch {
     }
 
     /**
+     * end batch to return a readable array to be read in to a pdf, email etc for
+     * delivery of the completed consignments to the couriers.
      * @param $batch
      * @return array
      */
@@ -57,6 +61,7 @@ class Batch {
 
     /**
      * record batch to create the array to store the consignments created.
+     * used to record the consignments created.
      * @param $amount
      * @return array
      */

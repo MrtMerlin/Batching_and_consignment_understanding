@@ -32,7 +32,7 @@ class Consignment {
     }
 
     /**
-     * Add a single consignment
+     * Adds a single consignment to record batch
      * @return mixed|string
      */
     public function add_consignment($amount): string
